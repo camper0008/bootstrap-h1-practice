@@ -1,0 +1,137 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public sans', sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong,b {
+    color: #111;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    height: max-content;
+}
+
+nav ul li.active {
+    background-color: #4059AD;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.left {
+    width: 50%;
+    padding-right: 1rem;
+}
+
+#me {
+    float: right;
+}
+
+.expheader {
+    border-radius: 0.5rem 0.5rem 0rem 0;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.expbody {
+    display: inline-block;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    border: 1px solid #ddd;
+    border-top: 0px;
+    padding: 1rem;
+}
+
+.education {
+    padding: 0 1rem;
+}
+
+.education li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 0.75rem 0;
+}
+
+.education li:last-child {
+    border-bottom: 0px solid #ddd;
+
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #222;
+    padding: 1rem;
+    color: #fff;
+}
+
+textarea, input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.75rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.renovation {
+    text-align: center;
+}
+
+button {
+    all: unset;
+    background-color: #4059AD;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.hover {
+    transition: 150ms opacity;
+}
+
+.hover:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.hover:active {
+    opacity: 0.8;
+}
